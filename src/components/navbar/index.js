@@ -2,9 +2,8 @@ import React from "react";
 import styled from "styled-components";
 const Nav = styled.div`
 margin: 0 auto;
-width: 80%;
-padding-top: 3rem;
-  font-size:20px;
+padding: 3rem 1rem;
+  font-size:150%;
   display: flex;
   justify-content: space-evenly;
   a{

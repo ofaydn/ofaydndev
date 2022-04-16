@@ -3,6 +3,8 @@
 }
 .mainclass{
   text-align: center;
+  overflow: hidden;
+  
 }
 .App {
   text-align: center;
