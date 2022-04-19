@@ -12,13 +12,24 @@ const Intro = styled.div`
       font-size: 2rem;
       font-weight: 100;
   }
+  @media only screen and (max-width: 600px){
+    padding: 0px;
+    p{
+      font-size: 1.6rem;
+    }
+  }
   `
 const IntroFooter = styled.div`
   
   margin: 0 auto;
   display: flex;
   width:60%;
-  
+  @media only screen and (max-width: 600px) {
+  flex-direction: column;
+  .text{
+    padding-left:1.5rem;
+  }
+}
   img:hover{
     transform: rotate(360deg);
   }
@@ -51,9 +62,11 @@ const FooterLinks = styled.div`
   }
   
 `
+const Intromain = styled.div`
+margin: 0 auto;`
 export default function App(props){
 return(
-    <div>
+    <Intromain>
         <Intro>
             <p>hey i'm Ömer Faruk Aydın <br/>          
     i am a student who is working to be a software developer</p>
@@ -70,6 +83,6 @@ return(
                 
             
         </IntroFooter>
-    </div>
+    </Intromain>
     )
 }
