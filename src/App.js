@@ -9,7 +9,7 @@ function App() {
     <div className='mainclass'>
       <Navbar title="homepage" link="/homepage" 
       title2="blog" link2="/blog"
-      title3="arsal" link3="/arsal" />
+      title3="arsal" link3="/arsal"/>
       <Intro/>
     </div>
   );
