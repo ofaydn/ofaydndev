@@ -53,8 +53,8 @@ const FooterLinks = styled.div`
     width:50px;
     height:50px;
     transition: 0.7s;
-    border-radius: 10%;
-    margin: 1rem;
+    border-radius: 50%;
+    margin: rem;
   }
   a{
     text-decoration: none;
