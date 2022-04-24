@@ -24,17 +24,10 @@ const IntroFooter = styled.div`
   margin: 0 auto;
   display: flex;
   width:60%;
-  @media only screen and (max-width: 600px) {
-  flex-direction: column;
-  .text{
-    padding-left:1.5rem;
-  }
-}
   img:hover{
     transform: rotate(360deg);
   }
-  p{
-    
+  p{  
     font-size: 1.3rem;
     font-weight: 100;
   }
@@ -42,6 +35,13 @@ const IntroFooter = styled.div`
     width: 100%;
     display: flex;
     justify-content: right;
+  }
+  @media only screen and (max-width: 450px) {
+    flex-direction: column;
+    .text{
+      justify-content: center;
+      padding:0;
+    }
   }
   `
 
@@ -54,13 +54,16 @@ const FooterLinks = styled.div`
     height:50px;
     transition: 0.7s;
     border-radius: 50%;
-    margin: rem;
+    margin: 0rem;
   }
   a{
     text-decoration: none;
     transition: 0.3s;padding: 0 auto;
   }
-  
+  @media only screen and (max-width: 450px){
+    width: 100%;
+    justify-content: center;
+  }
 `
 const Intromain = styled.div`
 margin: 0 auto;`
@@ -70,6 +73,7 @@ return(
         <Intro>
             <p>hey i'm Ömer Faruk Aydın <br/>          
     i am a student who is working to be a software developer</p>
+    <h6 style={{margin:"0 auto"}}>also this website is being made with react, still in progress :)</h6>
         </Intro>
         <IntroFooter>
             <FooterLinks>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 const Nav = styled.div`
 margin: 0 auto;
-padding: 3rem 1rem;
+padding: 2rem 1rem;
   font-size:150%;
   display: flex;
   justify-content: space-evenly;
@@ -18,6 +18,7 @@ padding: 3rem 1rem;
 `
 export default function App(props){
     const {title,link,title2,link2,title3,link3} = props;
+    
     return(
         <Nav>
             <a href={link}>{title}</a>
